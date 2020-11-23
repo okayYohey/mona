@@ -8,7 +8,7 @@
     vertical-align: baseline;
     /*    color: #160404;*/
     color: #333;
-    font-family: 'Yu Gothic';
+    font-family: 'Noto Sans JP', sans-serif;
     /*    font-family: 'Meiryo UI'*/
     /*    font-family: 'Yu Mincho'*/
     /*    font-family: 'Osaka'*/
@@ -35,95 +35,35 @@ img {
 }
 
 /*reset done*/
-
 header,
-.content,
-footer {
-    display: block;
-    width: 100vw;
-}
 
 header {
-    position: fixed;
+    position: relative;
     top: 0;
-    height: 150px;
     background-color: #a33;
-    background-color: #0c4;
-    z-index: 5;
-    border-radius: 0 0 100px 100px
+    background-color: #fff;
+    padding: 30px
 }
 
 /*
-header .box{
-    position: absolute;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: #ddd solid;
-    background-color: aliceblue;
-    left: 50px;
-    top: 50px;
-}
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Sawarabi Gothic', sans-serif;
+font-family: 'Sawarabi Mincho', sans-serif;
 */
-header .logo {
-    display: inline-block;
-    width: 100px;
-    position: absolute;
-    left: 50px;
-    top: 50px;
-}
 
-header .title {
+header .title h1{
     text-align: center;
-}
-
-header h1 {
-    font-size: 50px;
-    text-align: center;
-    font-weight: 1000;
-    color: #fff;
-    position: relative;
-    top: 50px
-}
-
-header .menu {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: #ddd solid;
-    background-color: #eee;
-    border-radius: 0 100% 0 0;
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    box-shadow: 1px 5px 10px 1px #333;
-    cursor: pointer;
-}
-
-header .menu:hover {
-    background-color: #333;
-}
-
-header .menu:active {
-    background-color: #b33;
-}
-
-.content {
-/*    background: linear-gradient(#a33, #fff, #ee6, #082, #063);*/
-    background: 
-        linear-gradient(0deg,#063 ,rgba(30,150,150,0.9), rgba(50,0,150,0.8), rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-      linear-gradient(180deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    margin:0px auto;
+    color: #000;
+    width: 40%;
+    max-width:400px
 }
 
 .content,
 footer {
     position: relative;
-    padding: 0vh 0 40vh;
 }
-
 .content h2 {
-    font-size: 50px;
     text-align: center;
     margin: 0px auto;
 
@@ -172,18 +112,29 @@ input.btn2 {
 
 .title-copy {
     z-index: 0;
-    position: fixed;
-    padding: 300px 0;
     display: block;
-    width: 100vw;
-    min-height: 30vh;
+    max-width: 90%;
     line-height: 1.4;
+    margin: 0 auto;
+    background: #fff;
     
 }
 
 .title-copy h2 {
-    color: #fff;
-    margin: 100px auto;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 32px;
+    margin:150px auto ;
+}
+.title-copy h2 .description{
+    font-size: 12px;
+    display: block;
+    color: #777;
+    text-align: center;
+}
+.title-copy p{
+    font-size: 14px;
+    margin:18px 50px;
+    color: #222;
 }
 
 .target,
@@ -193,194 +144,45 @@ input.btn2 {
 .plan,
 .gather {
     z-index: 2;
-    /*    background-color:#eee;*/
     background-color: #fff;
     position: relative;
-    top: 40vh;
     padding: 50px 0;
-    /*    border: solid #333;*/
-    margin: 50px 5px;
-    box-shadow: 1px 3px 5px 0 #333;
-    border-radius: 50px;
-    transform: translate(0, 20px)
+    max-width: 90%;
+    margin: 100px auto;
 }
 
 footer {
     text-align: center;
-    background-color: #063;
-    padding: 50px 0;
+    padding: 50px 0 0;
 
 }
 
 footer h2 {
-    font-size: 28px;
-    color: #ddd;
-    margin: 0px auto 50px;
+    font-size: 24px;
+    font-family: 'Sawarabi Mincho', sans-serif;
 }
-
-footer h3 {
-    margin: 20px auto;
-    color: #ddd;
+footer p{
+    font-size: 14px;
+    margin: 10px auto;
 }
-
 footer ul {
-
-    width: 40%;
-    margin: 50px auto;
+    text-align: center;
+    margin: 190px auto;
+    max-width: 400px;
+    
 }
 
 footer li {
-    color: #ddd;
-    font-size: 30px;
-    margin: 1em;
+    font-size: 18px;
+    margin: 1.5em;
+    list-style: none;
+    
 }
-
-footer a {
-    color: #ddd;
+footer a{
+    font-family: 'Sawarabi Mincho', sans-serif;
 }
-
-footer .story {
-    list-style: unset
-}
-
-footer .sns {
-    display: flex;
-    justify-content: space-between
-}
-
-footer .sns li {
-    width: 20%;
-}
-
-.email-box {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+footer small{
+    font-size: 10px;
     display: block;
-    width: 100vw;
-    background-color: #eee;
-    z-index: 5;
-    text-align: center;
-    padding: 10px auto;
-    background-color: #063;
-    padding: 30px 0 0;
-}
-
-.email-box h3 {
-    font-size: 36px;
-    color: #eee;
-}
-
-.email-box .x {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 100px;
-    right: 30px;
-
-}
-
-.email-box .bar {
-    display: block;
-    width: 70%;
-    height: 3px;
-    background-color: #333;
-    cursor: pointer;
-    position: relative;
-    top: 0;
-}
-
-.email-box .bar:nth-child(1) {
-    transform: rotate(45deg);
-    top: 25px;
-    left: 0;
-}
-
-.email-box .bar:nth-child(2) {
-    transform: rotate(135deg);
-    top: 22px;
-    right: 0;
-}
-
-.cp_iptxt {
-    position: relative;
-    width: 80%;
-    margin: 40px 3%;
-}
-
-.cp_iptxt input[type='text'] {
-    font: 15px/24px sans-serif;
-    box-sizing: border-box;
-    width: 100%;
-    letter-spacing: 1px;
-    padding-left: 4em;
-}
-
-.cp_iptxt input[type='text']:focus {
-    outline: none;
-}
-
-.ef {
-    padding: 4px 0;
-    border: 0;
-    border-bottom: 1px solid #1b2538;
-    background-color: transparent;
-}
-
-.ef ~ .focus_line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    transition: 0.4s;
-    background-color: #da3c41;
-}
-
-.ef:focus ~ .focus_line,
-.cp_iptxt.ef ~ .focus_line {
-    width: 100%;
-    transition: 0.4s;
-}
-
-.ef ~ label {
-    position: absolute;
-    z-index: -1;
-    top: 4px;
-    left: 0;
-    width: 100%;
-    transition: 0.3s;
-    letter-spacing: 0.5px;
-    color: #aaaaaa;
-}
-
-.ef:focus ~ label,
-.cp_iptxt.ef ~ label {
-    font-size: 12px;
-    top: -16px;
-    transition: 0.3s;
-    color: #da3c41;
-}
-
-.non-close {
-    position: relative;
-    z-index: 0;
-    bottom: -20px
-}
-
-.non-close .x {
-    display: none;
-}
-
-.non-close h3 {
-    font-size: 14px;
-}
-
-.close {
-    display: none;
-}
-
-.for-close {
-    display: none;
+    margin:20px auto;
 }
