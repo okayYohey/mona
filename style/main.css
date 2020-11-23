@@ -40,8 +40,6 @@ header,
 header {
     position: relative;
     top: 0;
-    background-color: #a33;
-    background-color: #fff;
     padding: 30px
 }
 
@@ -74,49 +72,12 @@ footer {
     margin: 20px 50px;
 }
 
-block {
-    display: block;
-    text-align: center;
-}
-
-input {
-    font-size: 24px;
-    padding: 5px;
-}
-
-input.email {
-    width: 80%;
-    height: 70px;
-    background-color: none;
-    border-bottom: #333 solid 2px;
-    box-shadow: 1px 3px 3px 0 #333;
-    border-radius: 10px;
-}
-
-input.btn {
-    background-color: #093;
-    color: #fff;
-    width: 15%;
-    padding: 15px;
-    margin: 0 auto;
-    box-shadow: 2px 4px 8px 0 #333;
-    border-radius: 10px;
-    font-size: 36px;
-}
-
-input.btn2 {
-    background: #fff;
-    color: #336;
-    font-weight: bold;
-}
-
 .title-copy {
     z-index: 0;
     display: block;
     max-width: 90%;
     line-height: 1.4;
     margin: 0 auto;
-    background: #fff;
     
 }
 
@@ -144,7 +105,6 @@ input.btn2 {
 .plan,
 .gather {
     z-index: 2;
-    background-color: #fff;
     position: relative;
     padding: 50px 0;
     max-width: 90%;
@@ -185,4 +145,10 @@ footer small{
     font-size: 10px;
     display: block;
     margin:20px auto;
+}
+.bg{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
 }
