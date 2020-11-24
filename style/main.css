@@ -127,7 +127,7 @@ footer p{
 }
 footer ul {
     text-align: center;
-    margin: 190px auto;
+    margin: 0 auto;
     max-width: 400px;
     
 }
@@ -151,4 +151,12 @@ footer small{
     top: 0;
     z-index: -1;
     height: 100vh;
+}
+.sns{
+    width:40%;
+    max-width: 700px;
+}
+.sns li{
+    display: inline-block;
+    width:10%;
 }
